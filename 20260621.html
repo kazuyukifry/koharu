@@ -210,10 +210,119 @@
       height: 100%;
     }
 
-    .plan-card:nth-child(1) .plan-inner::before { background: var(--dusty-rose); }
-    .plan-card:nth-child(2) .plan-inner::before { background: var(--sage); }
-    .plan-card:nth-child(3) .plan-inner::before { background: var(--muted-blue); }
-    .plan-card:nth-child(4) .plan-inner::before { background: var(--accent); }
+    .plan-card.plan-a .plan-inner::before { background: var(--dusty-rose); }
+    .plan-card.plan-b .plan-inner::before { background: var(--accent); width: 4px; }
+    .plan-card.plan-c .plan-inner::before { background: var(--muted-blue); }
+    .plan-card.plan-d .plan-inner::before { background: var(--sage); }
+
+    .plan-card.plan-b .plan-inner {
+      background: rgba(255,255,255,0.68);
+      border-color: rgba(184,144,106,0.3);
+    }
+
+    .plan-decided-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Tenor Sans', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      color: var(--accent);
+      border: 1px solid rgba(184,144,106,0.5);
+      padding: 5px 18px;
+      margin-bottom: 28px;
+      text-transform: uppercase;
+    }
+
+    .plans-reference-header {
+      text-align: center;
+      padding: 56px 0 48px;
+      border-top: 1px solid var(--light-line);
+      margin: 16px 0 0;
+    }
+
+    /* ── MEETING ── */
+    .meeting-section {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 32px 80px;
+    }
+
+    .meeting-card {
+      border: 1px solid var(--light-line);
+      background: rgba(255,255,255,0.5);
+      padding: 40px;
+      position: relative;
+      text-align: center;
+    }
+
+    .meeting-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px;
+      height: 100%;
+      background: var(--sage);
+    }
+
+    .meeting-time-label {
+      font-family: 'Tenor Sans', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.35em;
+      color: var(--warm-gray);
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    .meeting-time {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(52px, 14vw, 80px);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--soft-black);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .meeting-place {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(18px, 4vw, 22px);
+      font-weight: 300;
+      color: var(--soft-black);
+      letter-spacing: 0.15em;
+      margin-bottom: 32px;
+    }
+
+    .meeting-divider {
+      width: 40px;
+      height: 1px;
+      background: var(--light-line);
+      margin: 0 auto 28px;
+    }
+
+    .meeting-note {
+      font-size: 13px;
+      line-height: 2.2;
+      color: var(--deep);
+      text-align: left;
+      margin-bottom: 32px;
+    }
+
+    .meeting-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      border-top: 1px solid var(--light-line);
+      padding-top: 24px;
+      text-align: left;
+    }
+
+    .meeting-meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
 
     .plan-image-placeholder {
       width: 100%;
@@ -374,6 +483,74 @@
       color: var(--accent);
     }
 
+    /* ── POLICY ── */
+    .policy-section {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 32px 80px;
+    }
+
+    .policy-card {
+      border: 1px solid var(--light-line);
+      background: rgba(255,255,255,0.5);
+      padding: 40px;
+      position: relative;
+    }
+
+    .policy-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px;
+      height: 100%;
+      background: var(--muted-blue);
+    }
+
+    .policy-list {
+      list-style: none;
+    }
+
+    .policy-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--light-line);
+      line-height: 1.8;
+    }
+
+    .policy-item:first-child { border-top: 1px solid var(--light-line); }
+
+    .policy-status {
+      font-family: 'Tenor Sans', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.22em;
+      padding: 3px 10px;
+      border: 1px solid;
+      white-space: nowrap;
+      margin-top: 4px;
+      flex-shrink: 0;
+      text-transform: uppercase;
+    }
+
+    .policy-status--go    { color: var(--sage);      border-color: var(--sage); }
+    .policy-status--care  { color: var(--accent);    border-color: rgba(184,144,106,0.5); }
+    .policy-status--note  { color: var(--warm-gray); border-color: var(--light-line); }
+
+    .policy-text strong {
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+      color: var(--soft-black);
+      margin-bottom: 3px;
+    }
+
+    .policy-text span {
+      font-size: 12px;
+      color: var(--warm-gray);
+      line-height: 1.9;
+    }
+
     /* ── TODO SECTION ── */
     .todo-section {
       max-width: 640px;
@@ -404,6 +581,7 @@
       border: 1px solid var(--dusty-rose);
       flex-shrink: 0;
       margin-top: 3px;
+      position: relative;
     }
 
     .todo-text strong {
@@ -417,6 +595,24 @@
       font-size: 12px;
       color: var(--warm-gray);
     }
+
+    .todo-list li.done .todo-check {
+      background: var(--dusty-rose);
+      border-color: var(--dusty-rose);
+    }
+
+    .todo-list li.done .todo-check::after {
+      content: '';
+      position: absolute;
+      top: 4px; left: 3px;
+      width: 8px; height: 5px;
+      border-left: 1.5px solid white;
+      border-bottom: 1.5px solid white;
+      transform: rotate(-45deg);
+    }
+
+    .todo-list li.done .todo-text strong { color: var(--warm-gray); }
+    .todo-list li.done .todo-text span   { opacity: 0.6; }
 
     /* ── FOOTER ── */
     .footer {
@@ -449,6 +645,7 @@
       .plan-meta { grid-template-columns: 1fr; }
       .plan-number { font-size: 56px; }
       .links-grid { grid-template-columns: 1fr 1fr; }
+      .meeting-meta { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -471,22 +668,108 @@
         初めての撮影なので、当日はゆっくりお話ししながら進めましょう。<br>
         気になることや苦手なことは気軽に言ってください。<br>
         何よりも楽しい撮影にしたいと思っています。<br><br>
-        いくつかプランを考えてみたので、気になるものがあれば教えてください。
+        お天気に恵まれますように。
       </p>
     </div>
   </section>
 
+  <!-- MEETING SECTION -->
+  <div class="section-header">
+    <span class="section-en">Meeting Point</span>
+    <p class="section-jp">待ち合わせ</p>
+  </div>
+  <div class="meeting-section">
+    <div class="meeting-card">
+      <span class="meeting-time-label">集合時刻</span>
+      <div class="meeting-time">9 : 30</div>
+      <div class="meeting-place">西横浜駅</div>
+      <div class="meeting-divider"></div>
+      <p class="meeting-note">
+        西横浜駅で合流して、一緒にイングリッシュガーデンへ向かいます（徒歩10分）。<br>
+        西横浜駅は、横浜駅から相鉄線（各駅停車）に乗り換えて一駅です。<br>
+        開園は10時ですが、シャトルバス到着後は入園待ちの列ができる可能性があるため、少し早めに到着して並ぶ想定です。
+      </p>
+    </div>
+  </div>
+
+  <!-- RAIN POLICY SECTION -->
+  <div class="section-header">
+    <span class="section-en">Rain Policy</span>
+    <p class="section-jp">雨天時の方針</p>
+  </div>
+  <div class="policy-section">
+    <div class="policy-card">
+      <ul class="policy-list">
+        <li class="policy-item">
+          <span class="policy-status policy-status--go">実施</span>
+          <div class="policy-text">
+            <strong>曇り〜小雨なら予定通り撮影</strong>
+            <span>紫陽花との撮影なので、曇りや小雨の雰囲気も合うと思います。小雨くらいでしたら予定通り撮影しましょう。</span>
+          </div>
+        </li>
+        <li class="policy-item">
+          <span class="policy-status policy-status--note">判断</span>
+          <div class="policy-text">
+            <strong>前日夜の予報または当日朝の天気を見て</strong>
+            <span>前日夜か当日朝に連絡を取り合って決めましょう。天気が崩れた場合に備えて、屋根のある場所など代案も事前に少し考えておきます。撮影困難な場合は延期も選択肢に、無理のない形でお願いします。</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <!-- PLANS HEADER -->
   <div class="section-header">
-    <span class="section-en">Photo Plans</span>
-    <p class="section-jp">4つの撮影プラン</p>
+    <span class="section-en">Decided Plan</span>
+    <p class="section-jp">決定プラン</p>
   </div>
 
   <!-- PLANS -->
   <div class="plans">
 
+    <!-- PLAN B（決定プラン） -->
+    <div class="plan-card plan-b">
+      <div class="plan-number">B</div>
+      <div class="plan-inner">
+        <div class="plan-decided-badge">Decided Plan &mdash; 決定</div>
+        <img src="https://kfgopro.com/wordpress/wp-content/uploads/2026/06/20260621_planB.jpg" alt="Plan B — 横浜イングリッシュガーデン" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;margin-bottom:32px;">
+        <div class="plan-header">
+          <span class="plan-name-en">Plan B</span>
+        </div>
+        <h2 class="plan-title">横浜イングリッシュガーデン</h2>
+        <p class="plan-subtitle">Hydrangea Festival</p>
+        <div class="plan-tags">
+          <span class="tag">紫陽花</span>
+          <span class="tag">洋風ガーデン</span>
+          <span class="tag">アジサイ・フェスティバル</span>
+        </div>
+        <p class="plan-desc">
+          横浜・西区にある本格的なイングリッシュガーデン。<br>
+          6/28まで「アジサイ・フェスティバル」が開催されており、<br>
+          撮影当日はちょうど見頃のピークを迎えています。<br>
+          花に包まれたポートレートが思いきり楽しめるロケーションです。
+        </p>
+        <div class="plan-meta">
+          <div class="plan-meta-item">
+            <span class="meta-label">集合場所</span>
+            <span class="meta-value">西横浜駅（相鉄線）</span>
+          </div>
+          <div class="plan-meta-item">
+            <span class="meta-label">撮影時間（目安）</span>
+            <span class="meta-value">1〜2時間</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 参考プラン ヘッダー -->
+    <div class="plans-reference-header">
+      <span class="section-en">Reference Plans</span>
+      <p class="section-jp">参考プラン</p>
+    </div>
+
     <!-- PLAN A -->
-    <div class="plan-card">
+    <div class="plan-card plan-a">
       <div class="plan-number">A</div>
       <div class="plan-inner">
         <img src="https://kfgopro.com/wordpress/wp-content/uploads/2026/06/20260621_planA.jpg" alt="Plan A — 中目黒・代官山" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;margin-bottom:32px;">
@@ -520,42 +803,8 @@
       </div>
     </div>
 
-    <!-- PLAN B -->
-    <div class="plan-card">
-      <div class="plan-number">B</div>
-      <div class="plan-inner">
-        <img src="https://kfgopro.com/wordpress/wp-content/uploads/2026/06/20260621_planB.jpg" alt="Plan B — 横浜イングリッシュガーデン" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;margin-bottom:32px;">
-        <div class="plan-header">
-          <span class="plan-name-en">Plan B</span>
-        </div>
-        <h2 class="plan-title">横浜イングリッシュガーデン</h2>
-        <p class="plan-subtitle">Hydrangea Festival</p>
-        <div class="plan-tags">
-          <span class="tag">紫陽花</span>
-          <span class="tag">洋風ガーデン</span>
-          <span class="tag">アジサイ・フェスティバル</span>
-        </div>
-        <p class="plan-desc">
-          横浜・西区にある本格的なイングリッシュガーデン。<br>
-          6/28まで「アジサイ・フェスティバル」が開催されており、<br>
-          撮影当日はちょうど見頃のピークを迎えています。<br>
-          花に包まれたポートレートが思いきり楽しめるロケーションです。
-        </p>
-        <div class="plan-meta">
-          <div class="plan-meta-item">
-            <span class="meta-label">集合場所</span>
-            <span class="meta-value">横浜駅または現地</span>
-          </div>
-          <div class="plan-meta-item">
-            <span class="meta-label">撮影時間（目安）</span>
-            <span class="meta-value">1〜2時間</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- PLAN C -->
-    <div class="plan-card">
+    <div class="plan-card plan-c">
       <div class="plan-number">C</div>
       <div class="plan-inner">
         <img src="https://kfgopro.com/wordpress/wp-content/uploads/2026/06/20260621_planC.jpg" alt="Plan C — 府中市郷土の森博物館" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;margin-bottom:32px;">
@@ -590,7 +839,7 @@
     </div>
 
     <!-- PLAN D -->
-    <div class="plan-card">
+    <div class="plan-card plan-d">
       <div class="plan-number">D</div>
       <div class="plan-inner">
         <img src="https://kfgopro.com/wordpress/wp-content/uploads/2026/06/20260621_planD.jpg" alt="Plan D — 川越" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;margin-bottom:32px;">
@@ -725,18 +974,18 @@
   </div>
   <div class="todo-section">
     <ul class="todo-list">
-      <li>
+      <li class="done">
         <div class="todo-check"></div>
         <div class="todo-text">
           <strong>集合場所・集合時刻</strong>
-          <span>プランが決まったら、待ち合わせ場所と時間を決めましょう。</span>
+          <span>西横浜駅 9:30 集合 — 決定</span>
         </div>
       </li>
-      <li>
+      <li class="done">
         <div class="todo-check"></div>
         <div class="todo-text">
           <strong>スタイリング・服装</strong>
-          <span>ロケーションの雰囲気に合わせて、当日の服装を事前に相談しましょう。</span>
+          <span>白ワンピース — 決定。雨天時は足元・衣装の汚れを考慮して臨機応変に。</span>
         </div>
       </li>
       <li>
@@ -746,11 +995,11 @@
           <span>花束、帽子、バッグ、傘など、持参する小物があれば事前に共有しましょう。</span>
         </div>
       </li>
-      <li>
+      <li class="done">
         <div class="todo-check"></div>
         <div class="todo-text">
           <strong>雨天時の対応</strong>
-          <span>当日の天気によって、順延・プラン変更など事前にルールを決めておきましょう。</span>
+          <span>曇り〜小雨は実施。判断は前日夜または当日朝 — 決定</span>
         </div>
       </li>
     </ul>
