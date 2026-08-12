@@ -14,11 +14,6 @@
   a { color: #b8906a; text-decoration: none; border-bottom: 1px solid rgba(184,144,106,0.4); }
   a:hover { color: #3a332e; border-bottom-color: #b8906a; }
   ::selection { background: #f5f0ea; }
-  @font-face {
-    font-family: 'JPMincho';
-    src: local('Hiragino Mincho ProN'), local('Yu Mincho'), local('YuMincho');
-    unicode-range: U+3000-303F, U+3040-30FF, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FF00-FFEF, U+20000-2A6DF;
-  }
 </style>
 </head>
 <body>
@@ -36,7 +31,7 @@
   <symbol id="ic-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></symbol>
   <symbol id="ic-cafe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8.8h11v4.4a4.6 4.6 0 0 1-4.6 4.6h-1.8A4.6 4.6 0 0 1 6 13.2z"></path><path d="M17 10.2h1.5a2.1 2.1 0 0 1 0 4.2H17"></path><path d="M4.6 20.4h13.8"></path></symbol>
 </svg>
-<div style="position:relative;overflow:hidden;background:#faf7f3;color:#3a332e;font-family:'JPMincho','Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic',system-ui,sans-serif;font-weight:300;">
+<div style="position:relative;overflow:hidden;background:#faf7f3;color:#3a332e;font-family:'Hiragino Mincho ProN','Yu Mincho','YuMincho','Noto Serif JP',serif;font-weight:300;">
   <div style="position:absolute;top:-220px;left:-180px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle at 40% 40%, rgba(226,203,201,0.55), rgba(226,203,201,0) 68%);filter:blur(30px);pointer-events:none;"></div>
   <div style="position:absolute;top:60px;right:-200px;width:540px;height:540px;border-radius:50%;background:radial-gradient(circle at 50% 50%, rgba(206,214,200,0.42), rgba(206,214,200,0) 70%);filter:blur(34px);pointer-events:none;"></div>
   <div style="position:relative;max-width:660px;margin:0 auto;padding:0 26px;">
@@ -47,6 +42,27 @@
       <div style="font-family:'Tenor Sans',sans-serif;font-size:13px;letter-spacing:0.25em;color:#b8906a;">2026 . 08 . 13 Thu</div>
       <div style="width:1px;height:60px;background:linear-gradient(to bottom, transparent, #c9a8a0, transparent);margin:40px auto 0;"></div>
     </header>
+    <section data-fade="" style="padding:0 0 clamp(90px,20vw,170px);text-align:center;">
+      <div style="border:1px solid rgba(160,140,120,0.28);border-radius:4px;padding:clamp(34px,8vw,46px) clamp(22px,6vw,36px);">
+        <div style="font-family:Georgia,'Times New Roman',serif;font-size:10px;letter-spacing:0.4em;text-transform:uppercase;color:#9e9189;margin-bottom:16px;">Meeting Point</div>
+        <div style="font-family:'Hiragino Mincho ProN','Yu Mincho','YuMincho','Noto Serif JP',serif;font-size:clamp(15px,4vw,17px);letter-spacing:0.14em;color:#3a332e;margin-bottom:clamp(26px,6vw,34px);">待ち合わせ</div>
+        <div style="display:flex;align-items:flex-start;justify-content:center;gap:13px;margin-bottom:14px;">
+          <svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-clock"></use></svg>
+          <span style="font-size:14px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">2026年8月13日（木）9:00AM</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;justify-content:center;gap:13px;">
+          <svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-pin"></use></svg>
+          <span style="font-size:14px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">練馬高野台駅 北口ロータリー</span>
+        </div>
+        <div style="margin-top:clamp(26px,6vw,34px);padding-top:clamp(26px,6vw,34px);border-top:1px solid rgba(160,140,120,0.2);">
+          <div style="display:flex;align-items:flex-start;justify-content:center;gap:13px;margin-bottom:18px;">
+            <svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-car"></use></svg>
+            <span style="font-size:14px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">濃いグレーのホンダ車で伺います</span>
+          </div>
+          <img src="freed.png" alt="お迎えの車（ホンダ フリード、濃いグレー）" style="max-width:140px;width:100%;height:auto;display:block;margin:0 auto;border-radius:4px;" />
+        </div>
+      </div>
+    </section>
     <section data-fade="" style="padding:clamp(30px,8vw,56px) 0 clamp(90px,20vw,170px);text-align:center;">
       <p style="font-family:'Hiragino Mincho ProN','Yu Mincho','YuMincho','Noto Serif JP',serif;font-size:clamp(17px,4.4vw,20px);line-height:2.3;letter-spacing:0.06em;color:#3a332e;margin:0 0 clamp(38px,9vw,54px);">この夏、<br />どんな一日を過ごそう？</p>
       <p style="font-size:clamp(13.5px,3.6vw,15px);line-height:2.5;letter-spacing:0.05em;color:#3a332e;margin:0;text-wrap:pretty;">夏だからこそ出会える景色を探して、いくつか撮影プランを考えてみました。</br>気になる場所を教えてくださいね。</p>
@@ -54,6 +70,81 @@
     <div data-fade="" style="text-align:center;padding-bottom:clamp(60px,14vw,110px);">
       <div style="font-family:Georgia,'Times New Roman',serif;font-size:10px;letter-spacing:0.42em;text-transform:uppercase;color:#9e9189;">Five Days of Summer</div>
       <div style="font-family:'Hiragino Mincho ProN','Yu Mincho','YuMincho','Noto Serif JP',serif;font-size:clamp(15px,4vw,17px);letter-spacing:0.24em;color:#3a332e;margin-top:18px;">5つの撮影プラン</div>
+    </div>
+    <article style="padding-bottom:clamp(110px,24vw,190px);">
+      <div data-fade="" style="text-align:center;margin-bottom:clamp(22px,5vw,30px);">
+        <span style="display:inline-block;font-family:'Hiragino Mincho ProN','Yu Mincho','YuMincho','Noto Serif JP',serif;font-size:12px;letter-spacing:0.22em;color:#fff;background:#b8906a;padding:7px 20px;border-radius:20px;">決定プラン</span>
+      </div>
+      <div data-fade="" style="aspect-ratio:4/3;width:100%;">
+        <img src="plan03.jpg" alt="秋川渓谷" style="display:block;width:100%;height:100%;object-fit:cover;-webkit-mask-image:radial-gradient(ellipse 72% 72% at center, #000 55%, transparent 100%);mask-image:radial-gradient(ellipse 72% 72% at center, #000 55%, transparent 100%);" />
+      </div>
+      <div data-fade="" style="text-align:center;padding-top:clamp(38px,9vw,54px);">
+        <div style="display:inline-flex;align-items:center;gap:10px;">
+          <h2 style="font-family:'Hiragino Mincho ProN','Yu Mincho','YuMincho','Noto Serif JP',serif;font-weight:400;font-size:clamp(23px,6vw,29px);letter-spacing:0.12em;color:#2c2520;margin:0;">秋川渓谷</h2>
+          <a href="https://tokyo-westside.jp/akigawa/" target="_blank" rel="noopener" aria-label="秋川渓谷の参考リンク" style="display:inline-flex;align-items:center;justify-content:center;width:27px;height:27px;border-radius:50%;border:1px solid rgba(160,140,120,0.3);border-bottom:1px solid rgba(160,140,120,0.3);color:#b8906a;flex:0 0 auto;">
+            <svg width="14" height="14"><use href="#ic-tree"></use></svg>
+          </a>
+        </div>
+        <p style="font-family:'Hiragino Mincho ProN','Yu Mincho','YuMincho','Noto Serif JP',serif;font-size:clamp(16px,4.2vw,18px);line-height:2.1;letter-spacing:0.07em;color:#3a332e;margin:clamp(30px,7vw,42px) 0 0;">涼しい夏を探しに。</p>
+        <p style="font-size:clamp(13px,3.5vw,14.5px);line-height:2.5;letter-spacing:0.05em;color:#3a332e;margin:clamp(26px,6vw,34px) 0 0;text-wrap:pretty;">木漏れ日と渓流。</p>
+        <p style="font-size:clamp(13px,3.5vw,14.5px);line-height:2.5;letter-spacing:0.05em;color:#3a332e;margin:1.5em 0 0;text-wrap:pretty;">水辺を歩いたり、<br />足を水につけたりしながら、<br />涼やかな夏の空気を写真に残します。</p>
+      </div>
+      <div data-fade="" style="margin-top:clamp(44px,10vw,62px);padding-top:clamp(30px,7vw,38px);border-top:1px solid rgba(160,140,120,0.2);display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px 34px;">
+        <div style="display:flex;align-items:flex-start;gap:13px;"><svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-pin"></use></svg><span style="font-size:13px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">車でピックアップ</span></div>
+        <div style="display:flex;align-items:flex-start;gap:13px;"><svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-car"></use></svg><span style="font-size:13px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">車</span></div>
+        <div style="display:flex;align-items:flex-start;gap:13px;"><svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-clock"></use></svg><span style="font-size:13px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">9:00〜16:00 (移動含む)</span></div>
+        <div style="display:flex;align-items:flex-start;gap:13px;"><svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-dress"></use></svg><span style="font-size:13px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">水辺に似合う軽やかな服装。サンダルなど、水辺を歩きやすい履物</span></div>
+        <div style="display:flex;align-items:flex-start;gap:13px;"><svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-cafe"></use></svg><span style="font-size:13px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">古民家カフェでかき氷</span></div>
+      </div>
+      <div data-fade="" style="margin-top:clamp(52px,12vw,74px);padding-top:clamp(38px,9vw,52px);border-top:1px solid rgba(160,140,120,0.2);">
+        <div style="text-align:center;margin-bottom:clamp(32px,7vw,42px);">
+          <div style="font-family:Georgia,'Times New Roman',serif;font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:#9e9189;margin-bottom:12px;">In Case of Weather</div>
+          <p style="font-size:12.5px;line-height:2.3;letter-spacing:0.04em;color:#3a332e;margin:0 auto;max-width:440px;text-wrap:pretty;">台風通過後のため、当日の川の水量や天候によっては渓流での撮影が難しい可能性があります。<br />そのときは、秋川渓谷から都心方面へ戻る道すがら、こんな場所へ切り替えるのも楽しそうです。</p>
+        </div>
+        <div>
+          <div style="padding:clamp(20px,4.5vw,26px) 0;">
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:9px;">
+              <svg width="13" height="13" style="flex:0 0 auto;color:rgba(158,145,137,0.55);"><use href="#ic-pin"></use></svg>
+              <span style="font-size:12.5px;letter-spacing:0.1em;color:#9e9189;">福生ベースサイドストリート</span>
+            </div>
+            <p style="font-family:'Hiragino Mincho ProN','Yu Mincho','YuMincho','Noto Serif JP',serif;font-size:14.5px;letter-spacing:0.05em;color:#3a332e;margin:0 0 9px;">アメリカンな街並みで、少しポップな夏の写真を。</p>
+            <p style="font-size:12.5px;line-height:2.1;letter-spacing:0.03em;color:#3a332e;margin:0;text-wrap:pretty;">横田基地沿いに続く、アメリカンな雰囲気のストリート。英字看板やカラフルなお店、ヴィンテージ感のある街角を背景に、秋川渓谷とはまったく違う街歩きポートレートが撮れそうです。古着屋や雑貨屋をのぞいたり、ブルーシールでアイスを食べたり。のんびり寄り道しながら、夏の午後をスナップするのも楽しそう。</p>
+            <div style="margin-top:11px;font-size:11px;letter-spacing:0.04em;color:#b3a89c;">アメリカン ・ 街歩き ・ アイスクリーム</div>
+          </div>
+          <div style="padding:clamp(20px,4.5vw,26px) 0;border-top:1px solid rgba(160,140,120,0.15);">
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:9px;">
+              <svg width="13" height="13" style="flex:0 0 auto;color:rgba(158,145,137,0.55);"><use href="#ic-pin"></use></svg>
+              <span style="font-size:12.5px;letter-spacing:0.1em;color:#9e9189;">昭島・モリパーク</span>
+            </div>
+            <p style="font-family:'Hiragino Mincho ProN','Yu Mincho','YuMincho','Noto Serif JP',serif;font-size:14.5px;letter-spacing:0.05em;color:#3a332e;margin:0 0 9px;">緑とアウトドアの空気を残しながら、のんびり撮影。</p>
+            <p style="font-size:12.5px;line-height:2.1;letter-spacing:0.03em;color:#3a332e;margin:0;text-wrap:pretty;">アウトドアショップや緑のある空間を歩きながら、ナチュラルな雰囲気で撮影。秋川渓谷から場所を変えても、自然やアウトドアの空気感をそのままつなげられるのが魅力です。お店やカフェもあるので、天候を見ながら休憩を挟みやすい場所です。</p>
+            <div style="margin-top:11px;font-size:11px;letter-spacing:0.04em;color:#b3a89c;">アウトドア ・ 緑 ・ カフェ</div>
+          </div>
+          <div style="padding:clamp(20px,4.5vw,26px) 0;border-top:1px solid rgba(160,140,120,0.15);">
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:9px;">
+              <svg width="13" height="13" style="flex:0 0 auto;color:rgba(158,145,137,0.55);"><use href="#ic-pin"></use></svg>
+              <span style="font-size:12.5px;letter-spacing:0.1em;color:#9e9189;">立川・GREEN SPRINGS</span>
+            </div>
+            <p style="font-family:'Hiragino Mincho ProN','Yu Mincho','YuMincho','Noto Serif JP',serif;font-size:14.5px;letter-spacing:0.05em;color:#3a332e;margin:0 0 9px;">雨上がりの街と緑を、少し都会的に。</p>
+            <p style="font-size:12.5px;line-height:2.1;letter-spacing:0.03em;color:#3a332e;margin:0;text-wrap:pretty;">緑、水辺、階段、モダンな建築が組み合わさった開放的な空間。自然の柔らかさを残しながら、秋川とは少し違った都会的なポートレートが撮れそうです。小雨や雨上がりなら、透明傘や濡れた路面も写真の雰囲気として活かせそうです。</p>
+            <div style="margin-top:11px;font-size:11px;letter-spacing:0.04em;color:#b3a89c;">緑 ・ 水辺 ・ 雨上がり</div>
+          </div>
+          <div style="padding:clamp(20px,4.5vw,26px) 0;border-top:1px solid rgba(160,140,120,0.15);">
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:9px;">
+              <svg width="13" height="13" style="flex:0 0 auto;color:rgba(158,145,137,0.55);"><use href="#ic-pin"></use></svg>
+              <span style="font-size:12.5px;letter-spacing:0.1em;color:#9e9189;">江戸東京たてもの園</span>
+            </div>
+            <p style="font-family:'Hiragino Mincho ProN','Yu Mincho','YuMincho','Noto Serif JP',serif;font-size:14.5px;letter-spacing:0.05em;color:#3a332e;margin:0 0 9px;">雨の日なら、少しだけ昔の東京へ。</p>
+            <p style="font-size:12.5px;line-height:2.1;letter-spacing:0.03em;color:#3a332e;margin:0;text-wrap:pretty;">古い民家や商店、路地、縁側など、昔の東京の街並みを楽しめる場所。軒下や建物の中も活かしながら、しっとりした雨の日ならではのポートレートが撮れそうです。秋川とはまったく違う、小さな時間旅行のような撮影に切り替えられます。</p>
+            <div style="margin-top:11px;font-size:11px;letter-spacing:0.04em;color:#b3a89c;">古い街並み ・ レトロ ・ 雨の日</div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div data-fade="" style="text-align:center;padding:0 0 clamp(90px,20vw,150px);">
+      <div style="width:1px;height:56px;background:linear-gradient(to bottom, transparent, rgba(160,140,120,0.4), transparent);margin:0 auto clamp(44px,10vw,64px);"></div>
+      <div style="font-family:Georgia,'Times New Roman',serif;font-size:10px;letter-spacing:0.4em;text-transform:uppercase;color:#9e9189;">Reference Plans</div>
+      <div style="font-family:'Hiragino Mincho ProN','Yu Mincho','YuMincho','Noto Serif JP',serif;font-size:clamp(14px,3.6vw,16px);letter-spacing:0.2em;color:#9e9189;margin-top:14px;">ここからは参考プラン</div>
     </div>
     <article style="padding-bottom:clamp(110px,24vw,190px);">
       <div data-fade="" style="aspect-ratio:4/3;width:100%;">
@@ -99,29 +190,6 @@
         <div style="display:flex;align-items:flex-start;gap:13px;"><svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-clock"></use></svg><span style="font-size:13px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">15:30〜19:00</span></div>
         <div style="display:flex;align-items:flex-start;gap:13px;"><svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-dress"></use></svg><span style="font-size:13px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">夏らしく柔らかな服装</span></div>
         <div style="display:flex;align-items:flex-start;gap:13px;"><svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-cafe"></use></svg><span style="font-size:13px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">河川敷近くのカフェでひと休み</span></div>
-      </div>
-    </article>
-    <article style="padding-bottom:clamp(110px,24vw,190px);">
-      <div data-fade="" style="aspect-ratio:4/3;width:100%;">
-        <img src="plan03.jpg" alt="秋川渓谷" style="display:block;width:100%;height:100%;object-fit:cover;-webkit-mask-image:radial-gradient(ellipse 72% 72% at center, #000 55%, transparent 100%);mask-image:radial-gradient(ellipse 72% 72% at center, #000 55%, transparent 100%);" />
-      </div>
-      <div data-fade="" style="text-align:center;padding-top:clamp(38px,9vw,54px);">
-        <div style="display:inline-flex;align-items:center;gap:10px;">
-          <h2 style="font-family:'Hiragino Mincho ProN','Yu Mincho','YuMincho','Noto Serif JP',serif;font-weight:400;font-size:clamp(23px,6vw,29px);letter-spacing:0.12em;color:#2c2520;margin:0;">秋川渓谷</h2>
-          <a href="https://tokyo-westside.jp/akigawa/" target="_blank" rel="noopener" aria-label="秋川渓谷の参考リンク" style="display:inline-flex;align-items:center;justify-content:center;width:27px;height:27px;border-radius:50%;border:1px solid rgba(160,140,120,0.3);border-bottom:1px solid rgba(160,140,120,0.3);color:#b8906a;flex:0 0 auto;">
-            <svg width="14" height="14"><use href="#ic-tree"></use></svg>
-          </a>
-        </div>
-        <p style="font-family:'Hiragino Mincho ProN','Yu Mincho','YuMincho','Noto Serif JP',serif;font-size:clamp(16px,4.2vw,18px);line-height:2.1;letter-spacing:0.07em;color:#3a332e;margin:clamp(30px,7vw,42px) 0 0;">涼しい夏を探しに。</p>
-        <p style="font-size:clamp(13px,3.5vw,14.5px);line-height:2.5;letter-spacing:0.05em;color:#3a332e;margin:clamp(26px,6vw,34px) 0 0;text-wrap:pretty;">木漏れ日と渓流。</p>
-        <p style="font-size:clamp(13px,3.5vw,14.5px);line-height:2.5;letter-spacing:0.05em;color:#3a332e;margin:1.5em 0 0;text-wrap:pretty;">水辺を歩いたり、<br />足を水につけたりしながら、<br />涼やかな夏の空気を写真に残します。</p>
-      </div>
-      <div data-fade="" style="margin-top:clamp(44px,10vw,62px);padding-top:clamp(30px,7vw,38px);border-top:1px solid rgba(160,140,120,0.2);display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px 34px;">
-        <div style="display:flex;align-items:flex-start;gap:13px;"><svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-pin"></use></svg><span style="font-size:13px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">車でピックアップ</span></div>
-        <div style="display:flex;align-items:flex-start;gap:13px;"><svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-car"></use></svg><span style="font-size:13px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">車</span></div>
-        <div style="display:flex;align-items:flex-start;gap:13px;"><svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-clock"></use></svg><span style="font-size:13px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">9:00〜16:00 (移動含む)</span></div>
-        <div style="display:flex;align-items:flex-start;gap:13px;"><svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-dress"></use></svg><span style="font-size:13px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">水辺に似合う軽やかな服装。サンダルなど、水辺を歩きやすい履物</span></div>
-        <div style="display:flex;align-items:flex-start;gap:13px;"><svg width="19" height="19" style="flex:0 0 auto;color:rgba(158,145,137,0.6);margin-top:2px;"><use href="#ic-cafe"></use></svg><span style="font-size:13px;line-height:1.95;letter-spacing:0.05em;color:#3a332e;">古民家カフェでかき氷</span></div>
       </div>
     </article>
     <article style="padding-bottom:clamp(110px,24vw,190px);">
